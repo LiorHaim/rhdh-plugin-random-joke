@@ -3,7 +3,7 @@
 global:
   dynamic:
     plugins:
-      - package: oci://quay.io/rh_ee_lhaim/plugin-random-joke:0.1.0!scope-plugin-random-joke
+      - package: oci://quay.io/rh_ee_lhaim/plugin-random-joke:0.2.0!scope-plugin-random-joke
         disabled: false
         pluginConfig:
           dynamicPlugins:

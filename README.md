@@ -51,7 +51,7 @@ cd packages/random-joke
 REGISTRY=quay.io/rh_ee_lhaim VERSION=0.1.0 npm run package:oci
 ```
 
-This produces and pushes `oci://quay.io/rh_ee_lhaim/plugin-random-joke:0.1.0!scope-plugin-random-joke`.
+This produces and pushes `oci://quay.io/rh_ee_lhaim/plugin-random-joke:0.2.0!scope-plugin-random-joke`.
 
 ## Deploying to RHDH
 
@@ -61,7 +61,7 @@ Add the following to your RHDH Helm values:
 global:
   dynamic:
     plugins:
-      - package: oci://quay.io/rh_ee_lhaim/plugin-random-joke:0.1.0!scope-plugin-random-joke
+      - package: oci://quay.io/rh_ee_lhaim/plugin-random-joke:0.2.0!scope-plugin-random-joke
         disabled: false
         pluginConfig:
           dynamicPlugins:
