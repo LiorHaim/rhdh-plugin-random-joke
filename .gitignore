@@ -5,6 +5,7 @@ dist-dynamic/
 *.tgz
 .turbo/
 coverage/
+rhdh-random-joke-plugin.md
 .yarn/*
 !.yarn/releases
 !.yarn/plugins
