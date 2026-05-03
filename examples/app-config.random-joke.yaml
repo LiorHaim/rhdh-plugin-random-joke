@@ -1,0 +1,7 @@
+# Add this to your RHDH app-config to proxy the joke API.
+# The plugin fetches jokes through this proxy endpoint.
+proxy:
+  endpoints:
+    /joke-api:
+      target: https://official-joke-api.appspot.com
+      changeOrigin: true

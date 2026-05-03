@@ -1,0 +1,29 @@
+{
+  "name": "rhdh-plugin-random-joke",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Random Joke plugin for Red Hat Developer Hub",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "build:all": "turbo run build --force",
+    "clean": "turbo run clean && rimraf node_modules",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "export-dynamic": "turbo run export-dynamic"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "prettier": "^3.2.0",
+    "rimraf": "^5.0.5",
+    "turbo": "^2.0.0",
+    "typescript": "~5.3.3"
+  },
+  "packageManager": "yarn@4.1.0",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

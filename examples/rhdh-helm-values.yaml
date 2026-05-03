@@ -1,0 +1,20 @@
+# Helm values for deploying the Random Joke plugin to RHDH 1.9+.
+# Adjust the OCI image reference to match your registry and version.
+global:
+  dynamic:
+    plugins:
+      - package: oci://quay.io/rh_ee_lhaim/plugin-random-joke:0.1.0!scope-plugin-random-joke
+        disabled: false
+        pluginConfig:
+          dynamicPlugins:
+            frontend:
+              scope.plugin-random-joke:
+                dynamicRoutes:
+                  - path: /random-joke
+                    importName: RandomJokePage
+                    menuItem:
+                      icon: EmojiEmotions
+                      text: Random Joke
+                sidebarItems:
+                  - mountPoint: sidebar.nav
+                    importName: RandomJokeSidebarItem

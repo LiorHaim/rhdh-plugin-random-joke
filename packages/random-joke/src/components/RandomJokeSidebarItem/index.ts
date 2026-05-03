@@ -1,0 +1,1 @@
+export { RandomJokeSidebarItem } from './RandomJokeSidebarItem';
